@@ -12,6 +12,9 @@ $(document).ready(() => {
   const commentTemplate = _.template(stringyTemplate)
 
   const pages = $('#pages')
+  const $form = $('#post-form')
+  $form.on("submit", createPost)
+  
 
   function createPost(){
     const myTitle = document.getElementById("postTitle").value;
