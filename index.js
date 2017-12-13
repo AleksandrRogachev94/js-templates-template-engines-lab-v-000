@@ -17,6 +17,7 @@ $(document).ready(() => {
 
 
   function createPost(ev){
+    console.log("pam")
     ev.preventDefault()
     const myTitle = document.getElementById("postTitle").value;
     const myAuthor = document.getElementById("postAuthor").value;
