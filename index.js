@@ -22,6 +22,7 @@ $(document).ready(() => {
     const myAuthor = document.getElementById("postAuthor").value;
     const myBody = document.getElementById("postBody").value;
     const html = template({ title: myTitle, author: myAuthor, body: myBody })
+    console.log(html)
     pages.append(html)
   }
   function postComment(){
