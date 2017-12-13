@@ -24,7 +24,13 @@
       </article>
     </script>
     <script type="text/x-lodash-template" id="comments-template">
-    <div id="comments"></div>
+    <div id="comments">
+      <form id="comment-form" onsubmit="postComment();return false;">
+        Author: <input type="text" id="commentAuthor"><br>
+        Comment: <input type="text" id="commentBody"><br>
+        <input type="submit">
+        </form>
+    </div>
     </script>
 
     <script src="node_modules/lodash/lodash.min.js"></script>
