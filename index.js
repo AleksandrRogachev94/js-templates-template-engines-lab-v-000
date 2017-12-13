@@ -10,9 +10,9 @@ $(document).ready(() => {
 
   stringyTemplate = $('#comment-template').html()
   const commentTemplate = _.template(stringyTemplate)
-  
+
   const pages = $('#pages')
-  
+
   function createPost(){
     const myTitle = document.getElementById("postTitle").value;
     const myAuthor = document.getElementById("postAuthor").value;
