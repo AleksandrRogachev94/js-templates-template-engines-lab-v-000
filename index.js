@@ -26,7 +26,8 @@ $(document).ready(() => {
       author: myAuthor,
       body: myBody,
       postTemplate: postTemplate,
-      commentsTemplate: commentsTemplate
+      commentsTemplate: commentsTemplate,
+      commentTemplate: commentTemplate
     })
     pages.append(html)
   }
