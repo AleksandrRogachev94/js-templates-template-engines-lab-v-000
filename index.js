@@ -14,9 +14,10 @@ $(document).ready(() => {
   const pages = $('#pages')
   const $form = $('#post-form')
   $form.on("submit", createPost)
-  
 
-  function createPost(){
+
+  function createPost(ev){
+    ev.preventDefault()
     const myTitle = document.getElementById("postTitle").value;
     const myAuthor = document.getElementById("postAuthor").value;
     const myBody = document.getElementById("postBody").value;
