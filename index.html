@@ -16,14 +16,14 @@
       <div id="sidebar"></div>
       <div id="post"></div>
     </script>
-    <script id="post-template">
+    <script type="text/x-lodash-template" id="post-template">
       <article>
         <header><p><%= title %></p></header>
         <p><%= body %></p>
         <footer><p><%= author %></p></footer>
       </article>
-
     </script>
+    
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
