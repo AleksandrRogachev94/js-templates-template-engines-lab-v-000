@@ -6,7 +6,7 @@ $(document).ready(() => {
   const postTemplate = _.template(stringyTemplate)
 
   stringyTemplate = $('#comments-template').html()
-  const commnetsTemplate = _.template(stringyTemplate)
+  const commentsTemplate = _.template(stringyTemplate)
 
   stringyTemplate = $('#comment-template').html()
   const commentTemplate = _.template(stringyTemplate)
