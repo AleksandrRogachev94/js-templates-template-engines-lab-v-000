@@ -10,11 +10,17 @@ $(document).ready(() => {
 
   stringyTemplate = $('#comment-template').html()
   const commentTemplate = _.template(stringyTemplate)
+  const pages = $('#pages')
+  function createPost(){
+    const myTitle = document.getElementById("postTitle").value;
+    const myAuthor = document.getElementById("postAuthor").value;
+    const myBody = document.getElementById("postBody").value;
+    const html = template({ title: myTitle, author: myAuthor, body: myBody })
+    pages.append(html)
+  }
+  function postComment(){
+
+  }
 })
 
-function createPost(){
 
-}
-function postComment(){
-
-}
