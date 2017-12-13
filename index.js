@@ -1,6 +1,6 @@
 $(document).ready(() => {
   let stringyTemplate = $('#page-template').html()
-  const pageTemplate = _.template(stringyTemaplate)
+  const pageTemplate = _.template(stringyTemplate)
 
   stringyTemplate = $('post-template').html()
   const postTemplate = _.template(stringyTemplate)
@@ -10,7 +10,9 @@ $(document).ready(() => {
 
   stringyTemplate = $('#comment-template').html()
   const commentTemplate = _.template(stringyTemplate)
+  
   const pages = $('#pages')
+  
   function createPost(){
     const myTitle = document.getElementById("postTitle").value;
     const myAuthor = document.getElementById("postAuthor").value;
