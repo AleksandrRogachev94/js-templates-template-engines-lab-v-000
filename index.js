@@ -17,12 +17,11 @@ $(document).ready(() => {
 
 
   function createPost(ev){
-    console.log("pam")
     ev.preventDefault()
     const myTitle = document.getElementById("postTitle").value;
     const myAuthor = document.getElementById("postAuthor").value;
     const myBody = document.getElementById("postBody").value;
-    const html = template({ title: myTitle, author: myAuthor, body: myBody })
+    const html = pageTemplate({ title: myTitle, author: myAuthor, body: myBody })
     console.log(html)
     pages.append(html)
   }
